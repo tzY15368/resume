@@ -63,12 +63,14 @@
 \usepackage[margin=1cm, top=1cm]{geometry}
 
 %%%% Set Fonts
-\setmainfont[
-%BoldFont=
-BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
-ItalicFont=SourceSansPro-RegularIt.otf
-]{SourceSansPro-Regular.otf}
-\setsansfont{SourceSansPro-Semibold.otf}
+% \setmainfont[
+% %BoldFont=
+% BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+% ItalicFont=SourceSansPro-RegularIt.otf
+% ]{SourceSansPro-Regular.otf}
+% \setsansfont{SourceSansPro-Semibold.otf}
+\setmainfont{Times New Roman}
+
 
 %%%% Set Page
 \pagestyle{fancy}
@@ -105,7 +107,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Sections formatting
 \titleformat{\section}{
-\color{UI_black} \scshape \raggedright \large 
+\color{UI_BLACK} \scshape \raggedright \large 
 }{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
 
 %%%% Set Subtext Formatting
@@ -167,23 +169,23 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %\vspace{-0.2cm}
 %Highly Driven Solutions Engineer with 5+ years of experience defending the wall as part of the Night's Watch. %\hskills{Areas of expertise:} Defence, security, leadership, cold-weather survival. \hskills{Impact:} Internationally %recognized SME in knowing nothing, crowned "King in the North", drove Annihilation of Night King from development to %release  \vspace{-0.2cm}
 
-\section{Education}
+\section{\textbf{Education}}
 
 \subsection*{Computer Science}
 \begin{zitemize}
     \item
-        \subtext{Bachelor of Science, Dalian University of Technology, GPA: 3.4/4.0\hfill Sep 2018 --- Jun 2022}
-        \vspace{0.1cm}
+        \subtext{Bachelor of Science, Dalian University of Technology, GPA: 3.4/4.0\hfill \textbf{Sep 2018 --- Jun 2022}}
+        \vspace{0.15cm}
     \item
-        \subtext{Exchange Student, Technical University of Denmark \hfill Sep 2021 --- Jan 2022}
-        \vspace{0.1cm}
+        \subtext{Exchange Student, Technical University of Denmark \hfill \textbf{Sep 2021 --- Jan 2022}}
+        \vspace{0.15cm}
 \end{zitemize}
 
 \subsection*{Project Management}
 \begin{zitemize}
     \item
-        \subtext{Minor, Dalian University of Technology \hfill Sep 2018 --- Jun 2022}
-        \vspace{0.1cm}
+        \subtext{Minor, Dalian University of Technology \hfill \textbf{Sep 2018 --- Jun 2022}}
+        \vspace{0.15cm}
 \end{zitemize}
 
 \subsection*{English Proficiency}
@@ -195,14 +197,17 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \subsection*{Others}
 \begin{zitemize}
     \item
-        \subtext{Summer School, University College London \hfill Jul 2019 --- Aug 2019}
-        \vspace{0.1cm}
+        \subtext{Summer School, University College London \hfill \textbf{Jul 2019 --- Aug 2019}}
+        \vspace{0.15cm}
     \item
-        \subtext{Coursera.org Algorithms; Sequence models, Structuring machine learning projects\hfill 2020 --- 2021 }
-        \vspace{0.1cm}
+        \subtext{Introduction to Deep Learning \& Deep Learning Practices, School of Innovation and Entrepreneurship, DUT\hfill \textbf{Sep 2018 --- Jan 2020 }}
+        \vspace{0.15cm}
     \item
-        \subtext{MIT Distributed Systems 6.824\hfill2021}
-        \vspace{0.1cm}
+        \subtext{Coursera.org Algorithms; Sequence models, Structuring machine learning projects}
+        \vspace{0.15cm}
+    \item
+        \subtext{MIT Distributed Systems 6.824}
+        \vspace{0.15cm}
 \end{zitemize}
 \vspace{0.2cm}
 
@@ -210,7 +215,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 
-\section{Professional Experience}
+\section{\textbf{Professional Experience}}
 
 %%% ----- Best way to write items (Credit - ResumePuppy.com)
         % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
@@ -247,7 +252,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%%  ACADEMIC PROJECTS
 %%%%%%% --------------------------------------------------------------------------------------
 
-\section{Projects} %% (Or "Research", select as appropriate)
+\section{\textbf{Projects}} %% (Or "Research", select as appropriate)
 
 %%% ----- Best way to write items (Credit - FAANGPath)
         % \item Achieved X\% growth for XYZ using A, B, and C skills.
@@ -266,10 +271,12 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
-\subsection*{Core developer \& Project Cordinator, {\normalsize\normalfont \textit{Personal/Course Projects}} \hfill Sep 2020 --- Jun 2021} 
+\subsection*{Core developer \& Project Cordinator, {\normalsize\normalfont \textit{Personal/Course Projects}} \hfill Sep 2020 --- Jul 2021} 
     \begin{zitemize}
         \item \textbf{EmuEnglish}\\ A website that utilizes OCR and built-in dictionaries to assist students in learning English
         \item \textbf{CMM Compiler}\\ A simple All-in-one compiler and VM runtime that takes C-like syntax code and executes in the built-in VM. Works more like Python. Worked on PCode interpretor, VM and LL1 syntax analyzer
+        \item \textbf{Seafood classifier}\\ A WeChat miniprogram that helps users identify the type of seafood in a given photo. Worked on web crawlers for dataset collection, mini-program frontend and image-processing backend.
+        \item \textbf{3D Display case} \\ A display case that works by rapidly spinning a rod of LEDs, which leaves residual images in the human eyes. Deep collabration with EECS/CE group members, worked on real-time recording, relay and preview of camera footage from raspberry Π. Achieved 400\% performance boost on slow RPIs by employing SIMD hardware acceleration, front-end OpenGL image rendering and zero-copy methods.
     \end{zitemize}
 
 
@@ -292,12 +299,12 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  SKILLS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Technical Skills}
+\section{\textbf{Technical Skills}}
 \begin{tabular}{p{11em} p{1em} p{43em}}
 %\hskills{Physics Skills }&  &  A, B, C, D, E, F \\
 \hskills{Communication} & & Experience with Pure English/Bilingual Working Environment (Mandarin Chinese \& English)  \\
 \hskills{Programming} &  & Python, Golang, JavaScript \\
-\hskills{Others} & & MySQL, Redis, Influxdb
+\hskills{Others} & & Experience with MySQL, Redis, Influxdb
 \end{tabular}
 \vspace{-0.2cm}
 
@@ -337,7 +344,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  AWARDS & HONORS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Awards \& Honors}
+\section{\textbf{Awards \& Honors}}
 \vspace{-0.2cm}
 \begin{tabular}[t]{ p{4em} p{50em}}
 \hskills{2019} & National English Competition for College Students (\hskills{1st Prize}); IET Present Around the World (\hskills{2nd Place}); \\ % 
