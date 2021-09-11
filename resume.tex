@@ -55,6 +55,7 @@
 \usepackage{fontspec}
 \usepackage[inline]{enumitem}
 \usepackage{array}
+\usepackage{times}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage{anyfontsize}
 
@@ -63,6 +64,7 @@
 
 %%%% Set Fonts
 \setmainfont[
+%BoldFont=
 BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
 ItalicFont=SourceSansPro-RegularIt.otf
 ]{SourceSansPro-Regular.otf}
@@ -85,7 +87,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Secondary Color
 \definecolor{UI_blue}{RGB}{32, 64, 151}
-
+\definecolor{UI_BLACK}{RGB}{0,0,0}
 %%%% Define New Commands
 \usepackage[style=nature, maxbibnames=3]{biblatex}
 \addbibresource{Publications.bib}
@@ -103,7 +105,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Sections formatting
 \titleformat{\section}{
-\color{UI_blue} \scshape \raggedright \large 
+\color{UI_black} \scshape \raggedright \large 
 }{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
 
 %%%% Set Subtext Formatting
@@ -142,28 +144,72 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%%  HEADER
 %%%%%%% --------------------------------------------------------------------------------------
 \begin{center}
-    \begin{minipage}[b]{0.24\textwidth}
-            \large Shanghai, China \\
-            %\large (xxx)-xxx-xxxx \\
-            \large \href{mailto:nathanzy15@gmail.com}{nathanzy15@gmail.com} 
-    \end{minipage}% 
+    % \begin{minipage}[b]{0.24\textwidth}
+    %          Shanghai, China \\
+    %         %\large (xxx)-xxx-xxxx \\
+    %      \href{mailto:tzy15368@outlook.com}{tzy15368@outlook.com} 
+    % \end{minipage}% 
     \begin{minipage}[b]{0.5\textwidth}
             \centering
-            {\HUGE Yuan Tingzhou} \\ %
+            {\huge Yuan TingZhou} \\ %
             \vspace{0.1cm}
-            {\color{UI_blue} \Large{Software Development Engineer}} \\
+            tzy15368@outlook.com
     \end{minipage}% 
-    \begin{minipage}[b]{0.24\textwidth}
-            \flushright \large  Willing to Relocate
-            {\href{https://www.linkedin.com/in/tingzhou-yuan-aa7718214/}{Linkedin Profile} } \\
-            %\href{https://Add_your_portfolio_here_}{Portfolio}
-    \end{minipage}   
+    % \begin{minipage}[b]{0.24\textwidth}
+    %         \flushright \Huge sdf %Willing to Relocate
+    %         % {\href{https://www.linkedin.com/in/tingzhou-yuan-aa7718214/}{Linkedin Profile} } \\
+    %         %\href{https://Add_your_portfolio_here_}{Portfolio}
+    % \end{minipage}   
     
-\vspace{-0.15cm} 
-{\color{UI_blue} \hrulefill}
+\vspace{-0.35cm} 
+%{\color{UI_blue} \hrulefill}
 \end{center}
-\vspace{-0.2cm}
+%\vspace{-0.2cm}
 %Highly Driven Solutions Engineer with 5+ years of experience defending the wall as part of the Night's Watch. %\hskills{Areas of expertise:} Defence, security, leadership, cold-weather survival. \hskills{Impact:} Internationally %recognized SME in knowing nothing, crowned "King in the North", drove Annihilation of Night King from development to %release  \vspace{-0.2cm}
+
+\section{Education}
+
+\subsection*{Computer Science}
+\begin{zitemize}
+    \item
+        \subtext{Bachelor of Science, Dalian University of Technology, GPA: 3.4/4.0\hfill Sep 2018 --- Jun 2022}
+        \vspace{0.1cm}
+    \item
+        \subtext{Exchange Student, Technical University of Denmark \hfill Sep 2021 --- Jan 2022}
+        \vspace{0.1cm}
+\end{zitemize}
+
+\subsection*{Project Management}
+\begin{zitemize}
+    \item
+        \subtext{Minor, Dalian University of Technology \hfill Sep 2018 --- Jun 2022}
+        \vspace{0.1cm}
+\end{zitemize}
+
+\subsection*{English Proficiency}
+\begin{zitemize}
+    \item
+    \subtext{IELTS 7.5, GRE 333+5.0}
+\end{zitemize}
+
+\subsection*{Others}
+\begin{zitemize}
+    \item
+        \subtext{Summer School, University College London \hfill Jul 2019 --- Aug 2019}
+        \vspace{0.1cm}
+    \item
+        \subtext{Coursera.org Algorithms; Sequence models, Structuring machine learning projects\hfill 2020 --- 2021 }
+        \vspace{0.1cm}
+    \item
+        \subtext{MIT Distributed Systems 6.824\hfill2021}
+        \vspace{0.1cm}
+\end{zitemize}
+\vspace{0.2cm}
+
+
+
+
+
 \section{Professional Experience}
 
 %%% ----- Best way to write items (Credit - ResumePuppy.com)
@@ -174,8 +220,8 @@ ItalicFont=SourceSansPro-RegularIt.otf
         
 
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
-\subsection*{Backend Developer Intern \hfill Jan 2021 --- Mar 2021} 
-\subtext{Tencent Keen Security Lab\hfill Shanghai, China} 
+\subsection*{Keen Security Lab, Tencent\hfill Jan 2021 --- Mar 2021} 
+\subtext{\textit{Backend Developer Intern}\hfill Shanghai, China} 
     \begin{zitemize}
         \item Implemented GraphQL backend resolvers for an online system audition service for embedded devices, also worked on database migration and SDK.
         \item Independent work on Python SDK for abstract usage of an online binary decompiler service's GraphQL endpoints; Wrote production ready documentations; Integrated object storage usage to backend file analyzers.
@@ -183,10 +229,10 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
-\subsection*{Fullstack Developer Intern \hfill June 2021 --- Aug 2021} 
-\subtext{Bytedance \hfill Beijing, China} 
+\subsection*{Lark, Bytedance\hfill June 2021 --- Aug 2021} 
+\subtext{\textit{Fullstack Developer, summer intern } \hfill Beijing, China} 
     \begin{zitemize}
-        \item Designed and Implemented bot framework and applications for workflow automation, ticket tracking and sensitive resource approval in a to-B SAAS delivery team.
+        \item Designed and Implemented a bot framework \& applications for workflow automation, ticket tracking and sensitive resource authorization in a to-B SAAS delivery team.
         \item Operated CoreDNS to support system refactoring.
         \item Supported SRE work, aggregated data from k8s monitoring systems to reduce VM resource redundancies. 
     \end{zitemize}
@@ -210,9 +256,9 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{Core developer \& Principal, {\normalsize\normalfont DUTBIT studio} \hfill  Oct 2018 --- Jun 2021} 
+\subsection*{Core developer \& Principal, {\normalsize\normalfont \textit{DUTBIT studio}} \hfill  Oct 2018 --- Jun 2021} 
     \begin{zitemize}
-        \item Management System for university assosiations, established regular use within the department, made use of message queues and multi-layer caching to achieve optimal performance with limited resources
+        \item Operation Management System for university assosiations, established regular use within the department, made use of message queues and multi-layer caching to achieve optimal performance with limited resources
         \item Experience with Aliyun (Alibaba Cloud) services, set up devops pipeline with github actions
         \item Built key infrastructure services: object store, captcha, SSO, etc
         \item Acted as mentor for freshman
@@ -220,10 +266,10 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
-\subsection*{Core developer \& Project Cordinator, {\normalsize\normalfont Personal/Course Projects} \hfill Sep 2020 --- Jun 2021} 
+\subsection*{Core developer \& Project Cordinator, {\normalsize\normalfont \textit{Personal/Course Projects}} \hfill Sep 2020 --- Jun 2021} 
     \begin{zitemize}
-        \item EmuEnglish, a website that utilizes OCR and built-in dictionaries to assist students in learning English
-        \item CMM Compiler, an elementary compiler and VM runtime that takes C-like syntax code and executes in the built-in VM. Works more like Python. Worked on PCode interpretor, VM and LL1 syntax analyzer
+        \item \textbf{EmuEnglish}\\ A website that utilizes OCR and built-in dictionaries to assist students in learning English
+        \item \textbf{CMM Compiler}\\ A simple All-in-one compiler and VM runtime that takes C-like syntax code and executes in the built-in VM. Works more like Python. Worked on PCode interpretor, VM and LL1 syntax analyzer
     \end{zitemize}
 
 
@@ -240,38 +286,6 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%%  WORK EXPERIENCE
 %%%%%%% --------------------------------------------------------------------------------------
 
-\section{Education}
-
-\subsection*{Computer Science}
-\begin{zitemize}
-    \item
-        \subtext{Bachelor of Science, Dalian University of Technology, GPA: 3.4/4.0\hfill Sep 2018 --- Jun 2022}
-        \vspace{0.1cm}
-    \item
-        \subtext{Exchange Student, Technical University of Denmark \hfill Sep 2021 --- Jan 2022}
-        \vspace{0.1cm}
-\end{zitemize}
-
-\subsection*{Project Management}
-\begin{zitemize}
-    \item
-        \subtext{Minor, Dalian University of Technology \hfill Sep 2018 --- Jun 2022}
-        \vspace{0.1cm}
-\end{zitemize}
-
-\subsection*{Others}
-\begin{zitemize}
-    \item
-        \subtext{Summer School, University College London \hfill Jul 2019 --- Aug 2019}
-        \vspace{0.1cm}
-    \item
-        \subtext{Coursera.org Algorithms; Sequence models, Structuring machine learning projects\hfill 2020 --- 2021 }
-        \vspace{0.1cm}
-    \item
-        \subtext{MIT Distributed Systems 6.824\hfill2021}
-        \vspace{0.1cm}
-\end{zitemize}
-\vspace{0.2cm}
 
 
 
@@ -281,7 +295,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \section{Technical Skills}
 \begin{tabular}{p{11em} p{1em} p{43em}}
 %\hskills{Physics Skills }&  &  A, B, C, D, E, F \\
-\hskills{Communication} & & IELTS 7.5, GRE 333+5.0; Experience with Bilingual Working Environment (Mandarin Chinese \& English)  \\
+\hskills{Communication} & & Experience with Pure English/Bilingual Working Environment (Mandarin Chinese \& English)  \\
 \hskills{Programming} &  & Python, Golang, JavaScript \\
 \hskills{Others} & & MySQL, Redis, Influxdb
 \end{tabular}
