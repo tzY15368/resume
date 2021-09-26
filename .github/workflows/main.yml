@@ -31,7 +31,7 @@ jobs:
       - name: Install tex
         run: sudo apt-get install texlive-full && sudo apt-get install texlive-xetex && sudo apt-get install texlive-lang-chinese;
       - name: Compile pdf
-        run: pdflatex resume
+        run: xelatex resume
       - name: see
         run: ls -ll
   
