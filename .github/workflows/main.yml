@@ -37,5 +37,6 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "resume.pdf"
+          tag: master
           bodyFile: ""
           token: ${{ secrets.GITHUB_TOKEN }}
