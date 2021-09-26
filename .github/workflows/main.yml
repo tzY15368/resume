@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install times new roman
-        run: sudo apt-get update && sudo apt install -y ttf-mscorefonts-installer && sudo fc-cache -f -v;
+        run: sudo apt-get update && echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections && sudo apt-get install ttf-mscorefonts-installer && sudo fc-cache -f -v;
 
       - name: Compile LateX
           # You may pin to the exact commit or the version.
