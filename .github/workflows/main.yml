@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install times new roman
-        run: sudo apt-get update && sudo apt install cabextract && wget https://www.freedesktop.org/software/fontconfig/webfonts/webfonts.tar.gz && tar -xzf webfonts.tar.gz && cd msfonts/ && cabextract *.exe && cp *.ttf *.TTF ~/.local/share/fonts/ && sudo fc-cache && cd .. && fc-match Times;
+        run: sudo apt-get update && sudo apt install cabextract && wget https://www.freedesktop.org/software/fontconfig/webfonts/webfonts.tar.gz && tar -xzf webfonts.tar.gz && cd msfonts/ && cabextract *.exe && mkdir -p ~/.local/share/fonts && cp *.ttf *.TTF ~/.local/share/fonts/ && sudo fc-cache && cd .. && fc-match Times;
 
       - name: Compile LateX
           # You may pin to the exact commit or the version.
