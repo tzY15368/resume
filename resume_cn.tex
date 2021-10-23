@@ -1,0 +1,369 @@
+%-------------------------
+% Entry-level Resume in LaTeX
+% Last Edits - July 19, 2021
+% Author : Jayesh Sanwal
+% Reach out to me on LinkedIn(/in/jsanwal), with any suggestions, ideas, etc.
+%------------------------
+
+%%-------------------------------------
+% Author Notes here -
+% 1) Change " Author+an = {N=highlight}" in "Publications.bib", where N is the number at which your name appears
+% 2) Use "\vspace" wisely, that would change spacing, and is currently being used as a hacky fix
+% 3) Do not delete the fonts in the left side
+% 4) Use the "Rich Text" feature on Overleaf - On the top panel next to source. Makes it much easier for starters on LaTeX to use this template
+% 5) Do NOT use periods at the end of bullet points, the sample (ipsum) text might have it
+% 6) Use "maxbibnames" on this file to change the maximum number of authors on the paper (Credits: Dr. Natasha Krell) - Default is 3, but change line 92 to add authors
+
+%%-------------------------------------
+% Changes from last version -
+% 1) Removed areas of Expertise as a separate section - integrated into the summary section
+% 2) Changed Focus to Academic Projects instead of Education
+% 3) Made the integrated summary 3 lines over 1
+% 4) Changed spacing between sections and bullets
+% 5) Changed the number of authors to be user customized
+
+%%-------------------------------------
+% Changes to be made here -
+% 1) Shift to Class file, make changes here
+% 2) Use a fonts folder
+% 3) Incorporate Leadership & volunteering together
+% 4) Remove \vspace based 'hacky' fixes
+%%-------------------------------------
+
+
+\documentclass[a4,12pt]{article}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  STARTING HERE, DO NOT TOUCH ANYTHING 
+%%%%%%% --------------------------------------------------------------------------------------
+\usepackage[UTF8]{ctex}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\usepackage{times}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+% \setmainfont[
+% %BoldFont=
+% BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+% ItalicFont=SourceSansPro-RegularIt.otf
+% ]{SourceSansPro-Regular.otf}
+% \setsansfont{SourceSansPro-Semibold.otf}
+\setmainfont{Times New Roman}
+
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+\definecolor{UI_BLACK}{RGB}{0,0,0}
+%%%% Define New Commands
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_BLACK} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.3cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+    % \begin{minipage}[b]{0.24\textwidth}
+    %          Shanghai, China \\
+    %         %\large (xxx)-xxx-xxxx \\
+    %      \href{mailto:tzy15368@outlook.com}{tzy15368@outlook.com} 
+    % \end{minipage}% 
+    \begin{minipage}[b]{0.5\textwidth}
+            \centering
+            {\huge 袁廷洲} \\ %
+            \vspace{0.1cm}
+            tzy15368@outlook.com
+    \end{minipage}% 
+    % \begin{minipage}[b]{0.24\textwidth}
+    %         \flushright \Huge sdf %Willing to Relocate
+    %         % {\href{https://www.linkedin.com/in/tingzhou-yuan-aa7718214/}{Linkedin Profile} } \\
+    %         %\href{https://Add_your_portfolio_here_}{Portfolio}
+    % \end{minipage}   
+    
+\vspace{-0.35cm} 
+%{\color{UI_blue} \hrulefill}
+\end{center}
+%\vspace{-0.2cm}
+%Highly Driven Solutions Engineer with 5+ years of experience defending the wall as part of the Night's Watch. %\hskills{Areas of expertise:} Defence, security, leadership, cold-weather survival. \hskills{Impact:} Internationally %recognized SME in knowing nothing, crowned "King in the North", drove Annihilation of Night King from development to %release  \vspace{-0.2cm}
+
+\section{\textbf{教育}}
+\subsection*{大连理工大学 \hfill \textbf{Sep 2018 --- Jun 2022}}
+\begin{zitemize}
+    \item
+        \subtext{\textit{本科 计算机科学与技术}, 电子信息与电气工程学部, GPA: 3.4/4.0}
+        \vspace{0.15cm}
+    \item
+        \subtext{\textit{辅修 项目管理}, 经济与管理学院}
+        \vspace{0.15cm}
+    \item
+        \subtext{\textit{深度学习实践班}, 创新创业学院}
+        \vspace{0.15cm}
+        
+\end{zitemize}
+
+\subsection*{丹麦技术大学 \hfill \textbf{Aug 2021 --- Dec 2021}}
+\begin{zitemize}
+    \item
+        \subtext{交换生，计算机科学与技术}
+        \vspace{0.15cm}
+\end{zitemize}
+
+\subsection*{伦敦大学学院 \hfill \textbf{Jul 2019 --- Aug 2019}}
+\begin{zitemize}
+    \item
+        \subtext{夏校，统计学}
+        \vspace{0.15cm}
+\end{zitemize}
+
+\subsection*{MOOC \hfill \textbf{Jan 2020 --- Dec 2020}}
+\begin{zitemize}
+    \item
+        \subtext{Coursera.org, 算法I, 时间序列模型 }
+        \vspace{0.15cm}
+    \item
+        \subtext{MIT, 分布式系统 6.824}
+        \vspace{0.15cm}
+\end{zitemize}
+\vspace{0.2cm}
+
+
+
+
+
+\section{\textbf{工作经历}}
+
+%%% ----- Best way to write items (Credit - ResumePuppy.com)
+        % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
+        % \item Led the development, build and bring-up execution of Lyft’s first functional AV platform from start to finish; established fleet-grade product reliability over 5 months.
+        % \item Enhanced user experience by fine-tuning stored procedures & SQL queries for efficient data retrieval from ~4M records accessed by 5000+ users worldwide.
+        % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
+        
+
+%%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
+\subsection*{科恩实验室, 腾讯\hfill Jan 2021 --- Mar 2021} 
+\subtext{\textit{后端开发实习生}\hfill 上海} 
+    \begin{zitemize}
+        \item 负责开发GraphQL后端resolver以及对应的SDK接口
+        \item 独立设计、实现了基于AI的二进制文件分析器的Python SDK
+        \item 后端文件分析器接入对象存储
+        \item 调研并实现了实验性的系统内部防腐层
+        \item 编写直接面向客户的文档 
+    \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
+\subsection*{飞书，字节跳动\hfill June 2021 --- Aug 2021} 
+\subtext{\textit{暑期实习生} \hfill 北京} 
+    \begin{zitemize}
+        \item 设计并实现了一套聊天机器人框架、实际应用，用于自动化重复人工操作，实践了RBAC、自动工单处理与敏感资源分配
+        \item 编写自动化脚本操作微服务内部CoreDNS、负载均衡配置以协助前端私有化部署调整
+        \item 协助SRE同事处理微服务升级hot fix
+        \item 聚合k8s监控数据，并针对性地提出资源配置优化方案
+        \item 编写物理机磁盘监控agent
+    \end{zitemize}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  EDUCATION
+%%%%%%% --------------------------------------------------------------------------------------
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  ACADEMIC PROJECTS
+%%%%%%% --------------------------------------------------------------------------------------
+
+\section{\textbf{项目}} %% (Or "Research", select as appropriate)
+
+%%% ----- Best way to write items (Credit - FAANGPath)
+        % \item Achieved X\% growth for XYZ using A, B, and C skills.
+        % \item Led XYZ which led to X\% of improvement in ABC
+        % \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{DUTBIT 工作室 {\normalsize\normalfont \textit{核心开发者、主任}} \hfill  Oct 2018 --- Jun 2021} 
+\subtext{\textit{核心开发者}}
+    \begin{zitemize}
+        \item 负责设计、开发、迭代团委内部的单体架构社团管理系统，成功在团委内部推行部分功能。
+        \item 增加了异步消息队列与多级缓存以显著优化后端性能： 将TTFB指标降低了100ms
+        \item github actions流水线、阿里云云服务
+        \item 集成云原生组件：对象存储，验证码服务，消息队列，负载均衡与CDN，显著降低扩容复杂度
+        \item 为校内合作伙伴提供单点登录服务 
+    \end{zitemize}
+\vspace{0.3cm}
+\subtext{\textit{主任}}
+\begin{zitemize}
+    \item 担任新人导师，提供学习方向的指引
+    \item 内部技术分享
+    \item 建立内部wiki，实现知识积累
+\end{zitemize}
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{LAD全息广告解决方案 \hfill \textbf{Jun 2021 --- Jul 2021}}
+\subtext{\textit{项目管理}}
+\begin{zitemize}
+    \item 项目组内部沟通协调、推动成员间协作
+\end{zitemize}
+
+\vspace{0.3cm}
+\subtext{\textit{软件开发}}
+\begin{zitemize}
+    \item 基于树莓派的网络摄像头画面通过websocket数据转发及实时预览和录像
+    \item 通过树莓派端前端调用OpenGL渲染和优化后端数据处理链路以及采用SIMD硬件加速实现了4倍的FPS提升
+    
+\end{zitemize}
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{CMM Compiler \& Runtime  \hfill \textbf{Oct 2020 --- Nov 2020}}
+\subtext{\textit{Developer}}
+\begin{zitemize}
+    \item  A simple All-in-one compiler and VM runtime that interprets C-styled code and runs in the built-in VM
+    \item Design and implementation of the PCode interpretor and a stack-based Virtual Machine.
+    \item Implementation of the LL1 Syntax analyzer
+\end{zitemize}
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{教你识海鲜 小程序 \hfill \textbf{Oct 2019 --- Dec 2019}}
+\subtext{\textit{开发者}}
+\begin{zitemize}
+    \item 旨在帮助用户识别照片中的海鲜的微信小程序 
+    \item 负责编写自动化爬虫以建立数据集、小程序前端与图像处理后端
+\end{zitemize}
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{鸸鹋学英语 \hfill \textbf{Feb 2021 --- Mar 2021}}
+\subtext{\textit{独立开发者}}
+\begin{zitemize}
+    \item 使用OCR技术的英语学习网站，旨在协助高中生、大学生在阅读中学单词。
+\end{zitemize}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  SKILLS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{\textbf{技能}}
+\begin{tabular}{p{11em} p{1em} p{43em}}
+%\hskills{Physics Skills }&  &  A, B, C, D, E, F \\
+\hskills{语言} & & GRE 333+5.0, IELTS 7.5, TOEFL 109 \\
+\hskills{沟通} & & 双语工作环境 (中英)  \\
+\hskills{编程} &  & Python, Golang, JavaScript, Java \\
+\hskills{其他经验} & & MySQL, Redis, Influxdb
+\end{tabular}
+\vspace{-0.2cm}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  PUBLICATIONS
+%%%%%%% --------------------------------------------------------------------------------------
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5em}
+%\nocite{*}
+%\printbibliography[heading=none]
+%\vspace{-0.4cm}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  AWARDS & HONORS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{\textbf{奖项}}
+\vspace{-0.2cm}
+\subtext{\textbf{2019}}
+\begin{zitemize}
+    \item \textbf{一等奖} 全国大学生英语竞赛NECCS
+    \item \textbf{第二名} IET Present Around the World演讲比赛 大连理工大学赛区
+\end{zitemize}
+
+\vspace{0.3cm}
+\subtext{\textbf{2020}}
+\begin{zitemize}
+    \item \textbf{二等奖} 大连理工大学人工智能校赛-云状识别
+    \item \textbf{二等奖} 中国大学生计算机设计大赛 国赛
+\end{zitemize}
+
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
