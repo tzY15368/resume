@@ -1,36 +1,3 @@
-%-------------------------
-% Entry-level Resume in LaTeX
-% Last Edits - July 19, 2021
-% Author : Jayesh Sanwal
-% Reach out to me on LinkedIn(/in/jsanwal), with any suggestions, ideas, etc.
-%------------------------
-
-%%-------------------------------------
-% Author Notes here -
-% 1) Change " Author+an = {N=highlight}" in "Publications.bib", where N is the number at which your name appears
-% 2) Use "\vspace" wisely, that would change spacing, and is currently being used as a hacky fix
-% 3) Do not delete the fonts in the left side
-% 4) Use the "Rich Text" feature on Overleaf - On the top panel next to source. Makes it much easier for starters on LaTeX to use this template
-% 5) Do NOT use periods at the end of bullet points, the sample (ipsum) text might have it
-% 6) Use "maxbibnames" on this file to change the maximum number of authors on the paper (Credits: Dr. Natasha Krell) - Default is 3, but change line 92 to add authors
-
-%%-------------------------------------
-% Changes from last version -
-% 1) Removed areas of Expertise as a separate section - integrated into the summary section
-% 2) Changed Focus to Academic Projects instead of Education
-% 3) Made the integrated summary 3 lines over 1
-% 4) Changed spacing between sections and bullets
-% 5) Changed the number of authors to be user customized
-
-%%-------------------------------------
-% Changes to be made here -
-% 1) Shift to Class file, make changes here
-% 2) Use a fonts folder
-% 3) Incorporate Leadership & volunteering together
-% 4) Remove \vspace based 'hacky' fixes
-%%-------------------------------------
-
-
 \documentclass[a4,12pt]{article}
 
 %%%%%%% --------------------------------------------------------------------------------------
@@ -150,11 +117,11 @@
     %         %\large (xxx)-xxx-xxxx \\
     %      \href{mailto:tzy15368@outlook.com}{tzy15368@outlook.com} 
     % \end{minipage}% 
-    \begin{minipage}[b]{0.5\textwidth}
+    \begin{minipage}[b]{0.7\textwidth}
             \centering
-            {\huge Yuan TingZhou} \\ %
+            {\huge TingZhou Yuan} \\ %
             \vspace{0.1cm}
-            tzy15368@outlook.com
+           +8613918380447 | nathanzy15@gmail.com | github.com/tzY15368
     \end{minipage}% 
     % \begin{minipage}[b]{0.24\textwidth}
     %         \flushright \Huge sdf %Willing to Relocate
@@ -169,68 +136,41 @@
 %Highly Driven Solutions Engineer with 5+ years of experience defending the wall as part of the Night's Watch. %\hskills{Areas of expertise:} Defence, security, leadership, cold-weather survival. \hskills{Impact:} Internationally %recognized SME in knowing nothing, crowned "King in the North", drove Annihilation of Night King from development to %release  \vspace{-0.2cm}
 
 \section{\textbf{Education}}
+
+\subsection*{Boston University (BU)\hfill \textbf{(Expected) Sep 2022 --- Dec 2023}}
+Master of Science in Computer Science (MSCS)\\
+
+\vspace{-0.3cm}
 \subsection*{Dalian University of Technology (DUT) \hfill \textbf{Sep 2018 --- Jun 2022}}
-\begin{tabular}{p{20em} p{21em} p{43em}}
-\textbf{Major: Computer Science and Technology} & \textbf{GPA: 83.4/100}\\
-Minor: Project Management & GPA: 85.6/100\\
-Electives: Deep Learning & \textbf{}\\
-
-\end{tabular}
-
-
-\textbf{\small Relevant Coursework }\\
-Discrete Mathematics, Data structure and algorithms, Principles of Compiler, Principles of Database Systems
-\begin{tabular}{p{10em} p{13em} p{10em} p{13em}}
-
-\end{tabular}
-
-\begin{tabular}{p{25em} p{21em}}
-\textbf{\small Awards \& Prizes} & \\
-2020 Chinese Undergraduate Computer Design Contest & 2nd Prize \\
-2020 DUT AI Contest Cloud Shape Recognition & 2nd Prize \\
-2019 IET Present Around the World, DUT division & 2nd Place \\
-2019 National English Competition for College Students & 1st Prize \\
-\end{tabular}
+Bachelor of Engineering in Computer Science and Technology\\
+Minor in Project Management\\
 
 
 
-\vspace{-0.1cm}
-\subsection*{Technical University of Denmark (DTU) \hfill \textbf{Aug 2021 --- Dec 2021}}
-Exchange student, Computer Science \\ 
-\textbf{\small Relevant Coursework} \\ 
-\small 02110 Algorithms2, 02158 Concurrent Programming, 02269 Process Mining, 02807 Computational Tools for Data Science\normalsize \\
+% \subsection*{Technical University of Denmark (DTU) \hfill \textbf{Aug 2021 --- Dec 2021}}
+% Exchange student, Computer Science \\ 
 
-\vspace{-0.1cm}
-\subsection*{University College London (UCL) \hfill \textbf{Jul 2019 --- Aug 2019}}
-Summer School, Statistics
+\vspace{-0.4cm}
 
-\vspace{-0.1cm}
-\subsection*{MOOC \hfill \textbf{Jan 2020 --- Dec 2020}}
-\begin{tabular}{p{10em} p{21em}}
-Coursera.org     & Algorithms, Sequence models \\
-MIT     & 6.824 Distributed Systems
-\end{tabular}
-\vspace{0cm}
-
+\section{\textbf{Technical Skills}}
+\begin{zitemize}
+    \item Go gin, kratos, grpc, go-memdb, etcd graphql-go
+    \item python flask, sqlalchemy, fastapi, salt stack
+    \item javascript(node.js) react.js, express, mongodb, graphql
+    \item others: mysql, pg, redis, kafka mq, spark
+    \item devops: IAM/RBAC... coredns..., nginx..., k8s, raft 监控：promethes+influxdb+grafana
+\end{zitemize}
 
 \section{\textbf{Professional Experience}}
-
-%%% ----- Best way to write items (Credit - ResumePuppy.com)
-        % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
-        % \item Led the development, build and bring-up execution of Lyft’s first functional AV platform from start to finish; established fleet-grade product reliability over 5 months.
-        % \item Enhanced user experience by fine-tuning stored procedures & SQL queries for efficient data retrieval from ~4M records accessed by 5000+ users worldwide.
-        % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
         
 
-%%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
 \subsection*{Keen Security Lab, Tencent\hfill Jan 2021 --- Mar 2021} 
 \subtext{\textit{Backend Developer Intern}\hfill Shanghai, China} 
     \begin{zitemize}
-        \item Implemented GraphQL backend resolvers ,corresponding SDK extensions and carried out database migrations for an online system audition service for embedded devices
-        \item Design and implementation of a Python SDK for an AI based online binary analyzer
-        \item Integrated object storage usage to back-end binary analyzers
-        \item Investigated and implemented an experimental anti-corruption layer within the system
-        \item Composed and tested customer facing documentation 
+        \item Implemented GraphQL backend resolvers with graphql-go \& SQL, built corresponding SDK extensions and carried out database migrations for a backend system in production
+        \item Research and implementation of an experimental anti-corruption layer for up-stream dependencies
+        \item Implemented Python SDK for an online binary analyzer
+        \item Integrated object storage (S3) usage to backend service
     \end{zitemize}
 
 
@@ -238,18 +178,11 @@ MIT     & 6.824 Distributed Systems
 \subsection*{Lark, Bytedance\hfill June 2021 --- Aug 2021} 
 \subtext{\textit{Fullstack Developer, summer intern } \hfill Beijing, China} 
     \begin{zitemize}
-        \item Designed and Implemented a chat bot framework \& corresponding applications for recurring human labor in the workflow from scratch, focusing on automatic ticket processing and resource management with dynamic role based access control (RBAC)
-        \item Assisted in front-end refactoring for privatized deployments by interfacing the chat bot with scripts to rewire configurations of DNS (CoreDNS) and load balancers within the back-end system.
-        \item Assisted SRE colleagues in dealing with hot-fixes during updates to microservices
-        \item Aggregated data from monitoring systems for Kubernetes to reduce VM resource redundancies
-        \item Implemented disk metrics agent on host machines for the monitoring service
+        \item Designed and Implemented a chat bot framework \& corresponding applications for automated ticket processing and resource management with dynamic role based access control (RBAC)
+        \item Assisted Ops by interfacing the chat bot with custom scripts to rewire configurations of DNS (CoreDNS) and load balancers within the back-end system
+        \item Aggregated data from monitoring systems for Kubernetes to reduce VM resource redundancies with influxDB and Pandas
+        \item Implemented disk metrics agent on bare metal hosts for the monitoring service
     \end{zitemize}
-
-
-
-%%%%%%% --------------------------------------------------------------------------------------
-%%%%%%%  EDUCATION
-%%%%%%% --------------------------------------------------------------------------------------
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  ACADEMIC PROJECTS
@@ -264,29 +197,28 @@ MIT     & 6.824 Distributed Systems
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{DUTBIT studio: {\normalsize\normalfont Publicity Department of Dalian Univerisity of Technology} \hfill  Oct 2018 --- Jun 2021} 
+\subsection*{DUTBIT studio: {\normalsize\normalfont Publicity Department of Dalian Univerisity of Technology} \hfill  Oct 2018 --- Present} 
 
-\subtext{\textit{Principal}}
+\subtext{\textit{Leadership}}
 \begin{zitemize}
-    \item Acted as mentor for freshman, provided basic introduction to web programming
+    \item Acted as mentor for freshman, organized basic introduction to web programming
     \item Organized and hosted tech talks with seniors as speakers
-    \item Set up internal wiki for knowledge accumulation
+    \item Set up internal wiki for knowledge sharing and collaboration
 \end{zitemize}
 
-\vspace{0.3cm}
-\subtext{\textit{Lead developer}}
+\subtext{\textit{Developer}}
     \begin{zitemize}
         \item Design, implementation, Iteration and Maintenance of a monolithic Operation Management System for student associations, successfully established regular use within the department
-        \item Integrated message queues and multi-layer caching to achieve optimal performance with limited resources: 100ms reduction in TTFB and faster response under load
-        \item Experience with Aliyun (Alibaba Cloud) services, set up CI/CD pipelines
-        \item Integration with Cloud Native components (Object store, Captcha, Message Queue, Load Balancer, CDN, RDS) for easy up-scaling
-        \item Built Single-Sign-on (SSO) service for internal partners 
+        \item Integrated message queues and multi-layer caching to achieve optimal performance with limited resources: significant reduction in TTFB and faster response time under heavy load
+        \item Experience with AWS-like (Alibaba Cloud) cloud service, set up CI/CD pipelines with Github actions
+        \item Integration with Cloud Native components (Object store, Message Queue, Load Balancer, CDN, RDS) for easy out-scaling
+        \item Built Single-Sign-on (SSO) and Captcha service for internal partners 
     \end{zitemize}
 
 \section{\textbf{Projects}}
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{Lazarus: {\normalsize\normalfont Lightweight Config Management Platform for Web Servers} \hfill \textbf{Sep 2021 --- Present}}
+\subsection*{Lazarus: {\normalsize\normalfont Lightweight Config Management Platform for Web Servers} \hfill \textbf{Sep 2021 --- Jan 2022}}
 \subtext{\textit{Independent Full stack Developer}}
 \begin{zitemize}
     \item Achieve low scale-out cost with Leader-Worker architecture design
@@ -325,24 +257,16 @@ MIT     & 6.824 Distributed Systems
 \begin{zitemize}
     \item Implemented web crawlers for dataset collection used in seafood image classifiers with InceptionV3
     \item Designed UI/UX \& implemented front end with Wechat MiniProgram
-    \item Designed and implemented an asynchronous image-processing backend with fault tolerant task queues
+    \item Designed, implemented and deployed an asynchronous image-processing backend with fault tolerant task queues
 \end{zitemize}
 
 
 
-
-%%%%%%% --------------------------------------------------------------------------------------
-%%%%%%%  SKILLS
-%%%%%%% --------------------------------------------------------------------------------------
-\section{\textbf{Skills}}
-\begin{tabular}{p{11em} p{1em} p{43em}}
-%\hskills{Physics Skills }&  &  A, B, C, D, E, F \\
-\hskills{English Proficiency} & & GRE 333+5.0, IELTS 7.5, TOEFL 109 \\
-\hskills{Communication} & & Experience with Bilingual Working Environment (Mandarin Chinese \& English)  \\
-\hskills{Programming} &  & Python, Golang, JavaScript, Java \\
-\hskills{Others} & & Experience with MySQL, Redis, Influxdb
-\end{tabular}
-\vspace{-0.2cm}
+\section{\textbf{Coursework}}
+\begin{zitemize}
+    \item db, os,??
+    \item algorithms,...???
+\end{zitemize}
 
 
 %%%%%%% --------------------------------------------------------------------------------------
