@@ -153,13 +153,13 @@ Minor in Project Management\\
 \vspace{-0.4cm}
 
 \section{\textbf{Technical Skills}}
-\begin{zitemize}
-    \item Go gin, kratos, grpc, go-memdb, etcd graphql-go
-    \item python flask, sqlalchemy, fastapi, salt stack
-    \item javascript(node.js) react.js, express, mongodb, graphql
-    \item others: mysql, pg, redis, kafka mq, spark
-    \item devops: IAM/RBAC... coredns..., nginx..., k8s, raft 监控：promethes+influxdb+grafana
-\end{zitemize}
+\begin{tabular}{p{0.1\textwidth} p{0.8\textwidth}}
+    Go & Gin, Kratos, gRPC, go-memdb, etcd, graphql-go \\
+    Python & Flask, SQLAlchemy, Fastapi \\
+    JavaScript & ReactJS, Express, Mongodb, GraphQL\\
+    DevOps & IAM \& RBAC, Nginx, Promethes\&InfluxDB\&Grafana, Kubernetes\\
+    Others & Raft, MySQL, Redis, Kafka\\
+\end{tabular}
 
 \section{\textbf{Professional Experience}}
         
@@ -190,18 +190,13 @@ Minor in Project Management\\
 
 \section{\textbf{University and Community Service}} %% (Or "Research", select as appropriate)
 
-%%% ----- Best way to write items (Credit - FAANGPath)
-        % \item Achieved X\% growth for XYZ using A, B, and C skills.
-        % \item Led XYZ which led to X\% of improvement in ABC
-        % \item Developed XYZ that did A, B, and C using X, Y, and Z. 
-
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
 \subsection*{DUTBIT studio: {\normalsize\normalfont Publicity Department of Dalian Univerisity of Technology} \hfill  Oct 2018 --- Present} 
 
 \subtext{\textit{Leadership}}
 \begin{zitemize}
-    \item Lead the design, implementation, Iteration and Maintenance of a monolithic Operation Management System for student associations, handling >300 DAU
+    \item Lead the design, implementation, Iteration and Maintenance of a monolithic operation management system for student associations, handling >300 DAU
     \item Acted as mentor for freshman, organized basic introduction to web programming
     \item Organized and hosted tech talks with seniors as speakers
     \item Set up internal wiki \& SCM for knowledge sharing and collaboration
@@ -223,9 +218,10 @@ Minor in Project Management\\
 \subsection*{Cord: {\normalsize\normalfont Homebaked etcd} \hfill \textbf{Jan 2022 --- Apr 2022}} 
 \textit{Graduation Project}
 \begin{zitemize}
-    \item Implemented the Raft Consensus algorithm with gRPC for peer communication and mmap for fast storage
-    \item 789 Data change capturer
-    \item lease module
+    \item Implemented the Raft Consensus algorithm with gRPC for peer communication and mmap for fast storage, achieved 5000 linearizable QPS with 1 group on 3 nodes on synthetic workloads
+    \item Implemented a variant of Multi-Raft for data sharding and load balancing
+    \item Implemented watches with asynchronous change data capture module
+    \item Implemented leases with high consistency guarantees
 \end{zitemize}
 
 
@@ -235,31 +231,31 @@ Minor in Project Management\\
 \begin{zitemize}
     \item Achieved Low scale-out overhead with Leader-Worker architecture
     \item Standardized deployments with Terraform on Digital Ocean and dynamic naming service with Cloudflare SDK
-    \item Implemented config hot-reload and user authentication with Lua scripts for L7 load balancer (NginX)
+    \item Implemented config hot-reload and user authentication with Lua scripts for L7 load balancer (Nginx)
     \item Implemented management panel and user console with ReactJS ,Gin (Go) and SQLite
 \end{zitemize}
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
 \subsection*{LAD holographic advertising solution \hfill \textbf{Jun 2021 --- Jul 2021}}
-\subtext{\textit{Project Manager}}
+\subtext{\textit{Project Manager, team of 6}}
 \begin{zitemize}
-    \item Coordination and collaboration with team members majoring in Electrical Engineering
+    \item Managed coordination and collaboration with team members major in multiple disciplines.
 \end{zitemize}
 
 \vspace{0.3cm}
 \subtext{\textit{Software Developer}}
 \begin{zitemize}
-    \item Implmented Real-time recording, preview and websocket-based relay of webcam footage from Raspberry Pi
-    \item Employed SIMD hardware acceleration and front-end OpenGL rendering to achieve 4× FPS boost on RPIs with limited processing power
+    \item Implmented Real-time recording, preview and relay of webcam footage from Raspberry Pi with gorilla/websocket
+    \item Employed SIMD hardware acceleration and front-end OpenGL rendering to reduce CPU usage
 \end{zitemize}
 
-\subsection*{Weibo Crawler \hfill \textbf{Apr 2021 --- May 2021}}
-\subtext{\textit{Developer}}
-\begin{zitemize}
-    \item 456
-    \item 777
-\end{zitemize}
+% \subsection*{Weibo Crawler \hfill \textbf{Apr 2021 --- May 2021}}
+% \subtext{\textit{Developer}}
+% \begin{zitemize}
+%     \item 
+%     \item 777
+% \end{zitemize}
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
@@ -275,16 +271,16 @@ Minor in Project Management\\
 \subtext{\textit{Developer}}
 \begin{zitemize}
     \item Implemented web crawlers for dataset collection used in seafood image classifiers with InceptionV3
+    \item Trained InceptionV3 model with pytorch and transfer learning
     \item Designed UI/UX \& implemented front end with Wechat MiniProgram
-    \item Designed, implemented and deployed an asynchronous image-processing backend with fault tolerant task queues
+    \item Implemented and deployed an asynchronous image-processing backend with fault tolerant task queues
 \end{zitemize}
 
 
 
 \section{\textbf{Coursework}}
 \begin{zitemize}
-    \item db, os,??
-    \item algorithms,...???
+    \item Database System Principles, Operating System, Concurrent Programming, Algorithm and Data Structures
 \end{zitemize}
 
 
