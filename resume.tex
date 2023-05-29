@@ -140,7 +140,7 @@
 \section{\textbf{Education}}
 \vspace{-0.2cm}
 \subsection*{Boston University (BU)\hfill \textbf{(Expected) Sep 2022 --- Jun 2023}}
-Master of Science in Computer Science (MSCS)\\
+Master of Science in Computer Science (MSCS), GPA 3.96/4\\
 
 \vspace{-0.4cm}
 \subsection*{Dalian University of Technology (DUT) \hfill \textbf{Sep 2018 --- Jun 2022}}
@@ -159,11 +159,19 @@ Bachelor of Engineering in Computer Science and Technology, GPA 3.4/4; Minor in 
 \vspace{-0.15cm}
 
 
+\subsection*{\normalsize\textbf{Amazon AWS}\hfill May 2023 --- Aug 2023} 
+\subtext{\textit{Software Engineer Intern} \hfill Arlington VA, US} 
+    % \begin{zitemize}
+    %     \item \textit{Summer in progress}
+    % \end{zitemize}
+
+\vspace{-0.1cm}
+
 %%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
 \subsection*{\normalsize\textbf{Bytedance}\hfill June 2021 --- Aug 2021} 
 \subtext{\textit{Software Engineer Intern} \hfill Beijing, China} 
     \begin{zitemize}
-        \item Designed and Implemented a chat bot framework \& corresponding applications for automated ticket processing and cloud resource management with dynamic role based access control (\textbf{IAM \& RBAC}), enabled the collection of ticket processing metrics, reduced ticket turn-around time by 70\% while serving more than 50 engineers
+        \item Designed and Implemented a chat bot framework \& corresponding applications for automated ticket processing and cloud resource management with \textbf{IAM \& RBAC}, enabled ticket processing metrics collection, reduced ticket turn-around time by 70\%, serving more than 50 engineers
         \item Assisted procedure optimization by interfacing the chat bot with automatic configuration rewires of internal DNS (\textbf{CoreDNS}) and load balancers (\textbf{Nginx}), eliminating certain types of tickets and saving up to 1hr per day for delivery team members
         \item Aggregated data from monitoring systems for Kubernetes to reduce VM resource redundancies by 20\% with \textbf{InfluxDB, Promethes, Grafana} \& \textbf{Pandas} (Python)
     \end{zitemize}
@@ -200,23 +208,21 @@ Bachelor of Engineering in Computer Science and Technology, GPA 3.4/4; Minor in 
 %     \item Set up internal wiki \& SCM for knowledge sharing and collaboration
 % \end{zitemize}
 
+\vspace{-0.1cm}
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{Dataflow: Disaggregated state for streaming systems \normalfont\textit{Course Project; Team lead} \hfill \textbf{Feb 2023 --- May 2023}} 
+\begin{zitemize}
+    \item Design the system architecture for a distributed stream processing system prototype with extra state routing-table for state disaggregation \textbf{(gRPC, Java, Prometheus)} that supports cluster deployment
+    \item Implement \& evaluate the new state migration scheme to minimize downtime \& latency (Compare w/ \textbf{Flink})
+\end{zitemize}
+
 \vspace{-0.2cm}
 
-\subsection*{Kata Containers \normalfont\textit{Community contributor}\hfill \textbf{Sep 2022 --- Present}} 
+\subsection*{Kata Containers \normalfont\textit{Kata Outreach w/ Intel \& Alibaba}\hfill \textbf{Sep 2022 --- Jan 2023}} 
 \begin{zitemize}
     \item Migrate existing go-based administrative CLI tool to Rust (Kata-ctl) with \textbf{clap}
     \item Add direct volume device handlers to the Rust Kata runtime (containerd-shim-kata-v2) with \textbf{Hyper} and \textbf{ttRPC}
 \end{zitemize}
-
-\vspace{-0.1cm}
-%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{Cord: Homebaked etcd, \normalfont\textit{Graduation Project} \hfill \textbf{Jan 2022 --- Apr 2022}} 
-\begin{zitemize}
-    \item Implemented the \textbf{Raft consensus algorithm} with \textbf{gRPC} for peer communication and mmap for fast storage, achieved 2000 linearizable QPS with 3 nodes on synthetic workloads
-    \item Designed and implemented: a variant of \textbf{Multi-Raft} for sharding, asynchronous watches and consistent leases
-\end{zitemize}
-
-
 
 
 \vspace{-0.1cm}
@@ -224,10 +230,8 @@ Bachelor of Engineering in Computer Science and Technology, GPA 3.4/4; Minor in 
 \subsection*{DUTBIT studio: {\normalsize\normalfont Publicity Department of DUT, \textit{Studio Director}} \hfill  Oct 2018 --- Jun 2021} 
 
     \begin{zitemize}
-        \item Lead the design, implementation and maintenance of an operation management system for student associations, supporting critical interdepartmental events and benefiting over 30 student communities, handling >300 DAU
-        \item Developed \textbf{AJAX} based frontend with Bootstrap \& JQuery, with \textbf{ReactJS} components for real-time notifications.
-        \item Implemented a hybrid \textbf{MVC(MVT)/REST} backend with \textbf{Flask} and Flask-socketIO, Ali cloud RDS (\textbf{MySQL/AWS RDS}) with \textbf{SQLAlchemy}, a \textbf{Gin} server behind NAT, and \textbf{Redis} for asynchronous job queues, introduced \textbf{Tiered Caching} for optimal performance, built \textbf{SSO} and Captcha service for internal partners 
-        \item Built automated \textbf{CI/CD pipelines} with Github Actions, Webhooks and Docker containers
+        \item Lead team of 15 on the design, implementation and maintenance of an Ops Management system for student associations, supporting critical student events and benefiting over 30 student communities, handling >300 DAU
+        \item Evolving full-stack, scalable system architecture with React.js, Python/Go, Redis and AliCloud RDS, built CI/CD Pipelines with Github Actions and Docker
     \end{zitemize}
 
 %\vspace{-0.1cm}
@@ -246,8 +250,8 @@ Bachelor of Engineering in Computer Science and Technology, GPA 3.4/4; Minor in 
 \section{\textbf{Technical Skills}}
 \vspace{-0.2cm}
 \begin{zitemize}
-    \item \textbf{Programming languages} Go, Python, Rust, Java, JavaScript, SQL, C++
-    \item \textbf{Tech Stacks/Frameworks} Microservice Architecture, LMNP, MERN, Gin, Flask, React
+    \item \textbf{Programming languages} Go, Python, Java, Rust, JavaScript, SQL, C++
+    \item \textbf{Tech Stacks/Frameworks} Microservice, Open-Telemetry, Raft(protocol), Flink, Flask, React, LMNP
 \end{zitemize}
 
 
