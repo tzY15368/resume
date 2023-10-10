@@ -1,0 +1,233 @@
+\documentclass[a4,12pt]{article}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  STARTING HERE, DO NOT TOUCH ANYTHING 
+%%%%%%% --------------------------------------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\usepackage{times}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+% \setmainfont[
+% %BoldFont=
+% BoldFont={TeX Gyre Termes}, %SourceSansPro-Bold.otf
+% ItalicFont={TeX Gyre Termes}
+% ]{TeX Gyre Termes}
+\setmainfont{TeX Gyre Termes}
+
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+\definecolor{UI_BLACK}{RGB}{0,0,0}
+%%%% Define New Commands
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_BLACK} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.3cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\vspace{-0.5cm}
+\begin{center}
+    % \begin{minipage}[b]{0.24\textwidth}
+    %          Shanghai, China \\
+    %         %\large (xxx)-xxx-xxxx \\
+    %      \href{mailto:tzy15368@outlook.com}{tzy15368@outlook.com} 
+    % \end{minipage}% 
+    \begin{minipage}[b]{0.7\textwidth}
+            \centering
+            {\huge Nathan Yuan} \\ %
+            \vspace{0.1cm}
+           (551) 258-3978  | tzyuan15@gmail.com | github.com/tzy15368
+    \end{minipage}% 
+    
+\vspace{-0.35cm} 
+%{\color{UI_blue} \hrulefill}
+\end{center}
+
+\vspace{-1cm}
+
+\section{\textbf{Education}}
+\vspace{-0.2cm}
+\subsection*{Boston University (BU)\hfill \textbf{ Sep 2022 --- Dec 2023 }}
+Master of Science in Computer Science (MSCS), GPA 3.96/4\\
+
+\vspace{-0.4cm}
+\subsection*{Dalian University of Technology (DUT) \hfill \textbf{Sep 2018 --- Jun 2022}}
+Bachelor of Engineering in Computer Science and Technology, GPA 3.4/4; Minor in Project Management
+
+\vspace{-0.4cm}
+\subsection*{Shanghai Xuhui Occupation Senior High School \hfill \textbf{Sep 2015 --- Jun 2016}}
+
+
+\vspace{-0.15cm}
+
+
+\section{\textbf{Professional Experience}}
+        
+\vspace{-0.15cm}
+
+
+\subsection*{\normalsize\textbf{Amazon}\hfill May 2023 --- Aug 2023 } 
+\subtext{\textit{Software Engineer SDE Intern} \hfill Arlington VA, US} 
+    \begin{zitemize}
+        \item Collaborated with teams to design and develop a dynamic workflow model for self-service security automation capabilities, achieving \textbf{90\% FTE hour reduction}
+        \item Implement Workflow builder \& executor service with \textbf{next.js}, \textbf{redux}, \textbf{react-flow}, \textbf{AWS SWF \& DynamoDB}
+        % \item Design and implement workflow execution backend with Python, \textbf{AWS Simple Workflow Service} \& \textbf{DynamoDB}
+    \end{zitemize}
+
+\vspace{-0.1cm}
+
+%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
+\subsection*{\normalsize\textbf{Bytedance}\hfill June 2021 --- Aug 2021} 
+\subtext{\textit{Software Engineer Intern} \hfill Beijing, China} 
+    \begin{zitemize}
+        \item Designed and Implemented a chat bot framework \& corresponding applications for automated ticket processing and cloud resource management with \textbf{IAM \& RBAC}, enabled ticket processing metrics collection, reduced ticket turn-around time by 70\%, serving more than 50 engineers
+        \item Assisted procedure optimization by interfacing the chat bot with automatic configuration rewires of internal DNS (\textbf{CoreDNS}) and load balancers (\textbf{Nginx}), eliminating certain tickets and saving 20\%.
+        \item Aggregated data from monitoring systems for Kubernetes to reduce VM resource redundancies by 20\% with \textbf{InfluxDB, Promethes, Grafana} \& \textbf{Pandas} (Python)
+    \end{zitemize}
+\vspace{-0.1cm}
+
+\subsection*{\normalsize\textbf{Tencent}\hfill Jan 2021 --- Mar 2021} 
+\subtext{\textit{Software Engineer Intern}\hfill Shanghai, China} 
+    \begin{zitemize}
+        \item Implemented GraphQL backend resolvers with \textbf{graphql-go \& SQL}, built corresponding SDK extensions and carried out database migrations for a backend system in production with the \textbf{agile} development model
+        \item Independent research and implementation of an experimental anti-corruption layer for up-stream dependencies to support critical technical decisions, achieving 75\% decrease in task time consumption
+        \item Integrated object storage (\textbf{AWS S3}) to backend service, decoupling disk storage
+    \end{zitemize}
+\vspace{-0.1cm}
+
+\subsection*{\normalsize\textbf{BuzzBuzz Education}\hfill Jul 2016 --- Sep 2018} 
+\subtext{\textit{Full-time Software Engineer}\hfill Shanghai, China} 
+    \begin{zitemize}
+        \item Develop end-to-end wechat miniprogram for the online-education product with \textbf{node.js, html, css, Java, MySQL}
+        \item Employ data-driven A-B testing on product features, collect user action metrics and improve DAU
+    \end{zitemize}
+\vspace{-0.1cm}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  ACADEMIC PROJECTS
+%%%%%%% --------------------------------------------------------------------------------------
+
+% \section{\textbf{University and Community Service}} %% (Or "Research", select as appropriate)
+
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+
+
+\vspace{-0.2cm}
+
+\section{\textbf{Projects}}
+
+\vspace{-0.1cm}
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{Dataflow: Disaggregated state for streaming systems \normalfont\textit{Team lead} \hfill \textbf{Feb 2023 --- May 2023}} 
+\begin{zitemize}
+    \item Design the system architecture for a distributed stream processing system prototype with extra state routing-table for state disaggregation \textbf{(gRPC, Java, Prometheus)} that supports cluster deployment
+    \item Implement \& evaluate the new state migration scheme to minimize downtime \& latency (Compare w/ \textbf{Flink})
+\end{zitemize}
+
+\vspace{-0.1cm}
+
+\subsection*{DUTBIT studio: {\normalsize\normalfont Publicity Department of DUT, \textit{Studio Director}} \hfill  Oct 2018 --- Jun 2021} 
+
+    \begin{zitemize}
+        \item Lead team of 15 on the design, implementation and maintenance of an Ops Management system for student associations, supporting critical student events and benefiting over 30 student communities, handling >300 DAU
+        \item Built evolving full-stack, scalable system architecture with \textbf{React.js, Python/Go/PHP, Redis and AliCloud RDS, CI/CD w/ Github Actions and Docker}
+    \end{zitemize}
+
+\vspace{-0.4cm}
+\section{\textbf{Technical Skills}}
+\vspace{-0.2cm}
+\begin{zitemize}
+    \item \textbf{Programming languages} Go, Python, Java, Rust, JavaScript, TypeScript, SQL, C++, PHP
+    \item \textbf{Skills} Cloud Computing, AWS, Microservice, Kubernetes, Raft(protocol), Flink, Flask, React, Spring, MVC
+\end{zitemize}
+
+
+
+\end{document}
+
